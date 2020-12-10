@@ -3,6 +3,8 @@
 using namespace std;
 
 int main(){
+	do{
+		
 	int sec = 0; /* segundos */
 	int min = 0; /* minutos */
 	int desc = 0;/* descanso*/
@@ -13,6 +15,8 @@ int main(){
 	int ciclos = 0;
 	
 	int i = 0; /* loop */
+	
+
 	
 	cout << "Digite 1 para o pomodoro tradicional(25,5,30), \ndigite 2 para o fastPomodoro(20,3,25), \ndigite 3 para personalizar:\n";
 	cin >> escolha;
@@ -84,12 +88,13 @@ int main(){
 			desc=0;
 		 	i++;
 		}
-		Sleep(1000);
+		Sleep(1);
 		sec++;
 		
 	}while(i<ciclos);
 		cout << "Fim do pomodoro!";
-
+	
+	}while(0==0);
 	return 0;
 	
 	
